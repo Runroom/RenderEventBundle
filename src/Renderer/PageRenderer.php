@@ -20,7 +20,7 @@ use Symfony\Component\HttpFoundation\Response;
 use Symfony\Contracts\EventDispatcher\EventDispatcherInterface;
 use Twig\Environment;
 
-class PageRenderer
+final class PageRenderer
 {
     protected $twig;
     protected $eventDispatcher;
@@ -39,9 +39,11 @@ class PageRenderer
     public function renderResponse(string $view, $model = null, Response $response = null): Response
     {
         $this->pageViewModel->setContent($model);
-        $event = new PageRenderEvent($view, $this->pageViewModel, $response ?? new Response());
 
-        $this->eventDispatcher->dispatch($event, PageRenderEvent::EVENT_NAME);
+        $event = $this->eventDispatcher->dispatch(
+            new PageRenderEvent($view, $this->pageViewModel, $response ?? new Response()),
+            PageRenderEvent::EVENT_NAME
+        );
 
         $response = $event->getResponse();
         if ($response instanceof RedirectResponse || !empty($response->getContent())) {
