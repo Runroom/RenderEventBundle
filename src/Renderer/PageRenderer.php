@@ -20,7 +20,10 @@ use Symfony\Component\HttpFoundation\Response;
 use Symfony\Contracts\EventDispatcher\EventDispatcherInterface;
 use Twig\Environment;
 
-final class PageRenderer
+/**
+ * @final
+ */
+class PageRenderer
 {
     protected $twig;
     protected $eventDispatcher;
