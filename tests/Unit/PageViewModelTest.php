@@ -1,9 +1,17 @@
 <?php
 
+/*
+ * This file is part of the RenderEventBundle.
+ *
+ * (c) Runroom <runroom@runroom.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
 namespace Runroom\RenderEventBundle\Tests\Unit;
 
 use PHPUnit\Framework\TestCase;
-use Runroom\RenderEventBundle\ViewModel\MetaInformationViewModel;
 use Runroom\RenderEventBundle\ViewModel\PageViewModel;
 
 class PageViewModelTest extends TestCase
