@@ -1,0 +1,9 @@
+services:
+    _defaults:
+        public: false
+
+    Runroom\RenderEventBundle\Renderer\PageRenderer:
+        bind:
+            $pageViewModel: '@runroom.render_event.page_view_model'
+
+    runroom.render_event.page_view_model: ~

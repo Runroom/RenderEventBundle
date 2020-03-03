@@ -28,7 +28,7 @@ final class RenderEventExtension extends Extension
         $loader = new Loader\YamlFileLoader($container, new FileLocator(__DIR__ . '/../Resources/config'));
         $loader->load('services.yaml');
 
-        $definition = $container->getDefinition('runroom.base.page_view_model');
+        $definition = $container->getDefinition('runroom.render_event.page_view_model');
         $definition->setClass($config['page_view_model']);
     }
 }
