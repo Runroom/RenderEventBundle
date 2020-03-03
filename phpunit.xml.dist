@@ -11,7 +11,7 @@
          bootstrap="vendor/autoload.php"
 >
     <testsuites>
-        <testsuite name="TranslationBundle Test Suite">
+        <testsuite name="RenderEventBundle Test Suite">
             <directory suffix="Test.php">tests</directory>
         </testsuite>
     </testsuites>
