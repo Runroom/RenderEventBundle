@@ -9,8 +9,8 @@ RenderEventBundle
 [![Monthly Downloads](https://poser.pugx.org/runroom/render-event-bundle/d/monthly)](https://packagist.org/packages/runroom/render-event-bundle)
 [![Daily Downloads](https://poser.pugx.org/runroom/render-event-bundle/d/daily)](https://packagist.org/packages/runroom/render-event-bundle)
 
-![ci](https://github.com/Runroom/RenderEventBundle/workflows/ci/badge.svg?branch=master)
-![qa](https://github.com/Runroom/RenderEventBundle/workflows/qa/badge.svg?branch=master)
+![ci](https://github.com/Runroom/RenderEventBundle/workflows/ci/badge.svg?branch=1.x)
+![qa](https://github.com/Runroom/RenderEventBundle/workflows/qa/badge.svg?branch=1.x)
 
 ## Installation
 
