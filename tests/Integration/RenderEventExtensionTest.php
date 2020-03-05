@@ -14,6 +14,7 @@ declare(strict_types=1);
 namespace Runroom\RenderEventBundle\Tests\Integration;
 
 use Matthias\SymfonyDependencyInjectionTest\PhpUnit\AbstractExtensionTestCase;
+use Runroom\RenderEventBundle\Controller\TemplateController;
 use Runroom\RenderEventBundle\DependencyInjection\RenderEventExtension;
 use Runroom\RenderEventBundle\Renderer\PageRenderer;
 
@@ -32,6 +33,7 @@ class RenderEventExtensionTest extends AbstractExtensionTestCase
     public function itHasCoreServicesAlias(): void
     {
         $this->assertContainerBuilderHasService(PageRenderer::class);
+        $this->assertContainerBuilderHasService(TemplateController::class);
     }
 
     protected function getContainerExtensions(): array

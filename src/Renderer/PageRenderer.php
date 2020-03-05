@@ -25,9 +25,9 @@ use Twig\Environment;
  */
 class PageRenderer
 {
-    protected $twig;
-    protected $eventDispatcher;
-    protected $pageViewModel;
+    private $twig;
+    private $eventDispatcher;
+    private $pageViewModel;
 
     public function __construct(
         Environment $twig,

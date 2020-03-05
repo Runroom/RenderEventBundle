@@ -2,6 +2,12 @@ services:
     _defaults:
         public: false
 
+    Runroom\RenderEventBundle\Controller\TemplateController:
+        public: true
+        arguments:
+            $renderer: '@Runroom\RenderEventBundle\Renderer\PageRenderer'
+        tags: [controller.service_arguments]
+
     Runroom\RenderEventBundle\Renderer\PageRenderer:
         arguments:
             $twig: '@twig'
